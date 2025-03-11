@@ -1,0 +1,16 @@
+#!/bin/bash
+
+IS_SUDO_INSTALLED=$(command -v sudo &> /dev/null && echo "true" || echo "false")
+IS_APT_INSTALLED=$(command -v apt &> /dev/null && echo "true" || echo "false")
+IS_GIT_INSTALLED=$(command -v git &> /dev/null && echo "true" || echo "false")
+IS_GIT_FLOW_INSTALLED=$(command -v git-flow &> /dev/null && echo "true" || echo "false")
+IS_CURL_INSTALLED=$(command -v curl &> /dev/null && echo "true" || echo "false")
+IS_NVIM_INSTALLED=$(command -v nvim &> /dev/null && echo "true" || echo "false")
+IS_HTOP_INSTALLED=$(command -v htop &> /dev/null && echo "true" || echo "false")
+IS_TMUX_INSTALLED=$(command -v tmux &> /dev/null && echo "true" || echo "false")
+IS_FISH_INSTALLED=$(command -v fish &> /dev/null && echo "true" || echo "false")
+IS_ZSH_INSTALLED=$(command -v zsh &> /dev/null && echo "true" || echo "false")
+IS_OH_MY_ZSH_INSTALLED=$( [ -d "$HOME/.oh-my-zsh" ] && echo "true" || echo "false" )
+IS_P10K_INSTALLED=$( [ -d "$HOME/.oh-my-zsh/custom/themes/powerlevel10k" ] && echo "true" || echo "false" )
+IS_ZSH_AUTOSUGGESTIONS_INSTALLED=$( [ -d "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions" ] && echo "true" || echo "false" )
+IS_ZSH_SYNTAX_HIGHLIGHTING_INSTALLED=$( [ -d "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" ] && echo "true" || echo "false" )
