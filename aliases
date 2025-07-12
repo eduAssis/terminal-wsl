@@ -22,4 +22,10 @@ else
     alias pam="php artisan migrate"
     alias nrd="npm run dev"
     alias nrb="npm run build"
+
+    alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
+    alias api='docker compose exec api'
+
+    alias busca-hml-ec2='ssh buscacuritiba@18.228.64.134'
+    alias busca-prod-ec2='ssh buscacuritiba@18.230.246.197'
 fi
